@@ -9,7 +9,7 @@ public class Time {
     public String currentTime() {
 
         Date actualTime = new Date();
-        String patternDate = "HH:mm:ss";
+        String patternDate = "HH:mm";
         SimpleDateFormat dateFormat = new SimpleDateFormat(patternDate);
 
         return dateFormat.format(actualTime);

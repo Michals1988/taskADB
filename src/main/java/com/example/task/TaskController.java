@@ -112,7 +112,7 @@ public class TaskController implements Initializable {
     private Label clock;
 
 
-    Timeline timeline = new Timeline(new KeyFrame(Duration.millis(100), e -> {
+    Timeline timeline = new Timeline(new KeyFrame(Duration.seconds(60), e -> {
         clock.setText(time.currentTime());
         TvEvents tvEventToShow = new TvEvents();
         String eventId = "";
